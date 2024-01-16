@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/styleCommon.css">
+        <link rel="stylesheet" href="./styles/styleCommon.css">
+        <link rel="stylesheet" href="./styles/animations.css">
+        <!-- <link id="dark-stylesheet" rel="stylesheet" href="./styles/styleDark.css"> -->
+
+        <!-- Google font-family -->
+        <!-- Title - Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Subtitles - Noto Sans --->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+        <!-- Subtitles Great Vibes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <!-- Paragraphes - Lora -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+        <!-- Icons library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+
+        <title>Simple to do list - Object Oriented Programming</title>
+    </head>
+
+
+    <body>
+        
+        
+        <div id="main-container">
+
+       
+            <div id="header-container">
+                <h1>Simple to do list - Object Oriented Programming</h1>
+            </div>
+
+            <div id="header-btn-container">
+                <button id="close-page-btn" class="zoom-icon"><i class="iconoir-lock"></i></button>
+                <button id="dark-light-mode-btn" class="zoom-icon"><i></i></button>
+            </div>
+            
+
+            <h2 id="dashboard-container-h2">Dashboard</h2>
+            <div id="dashboard-container">
+                <div id="done-tasks-container">
+                    <div>
+                        <h3>Done</h3>
+                    </div>
+                    <div class="counter-tasks" id="nb-tasks-done">
+                    </div>
+                </div>
+                <div id="remaining-tasks-container">
+                    <div>
+                        <h3>Remaining</h3>
+                    </div>
+                    <div class="counter-tasks" id="nb-tasks-remaining">
+                    </div>
+                </div>
+                <div id="timer-container">
+                    <div>
+                        <h3>Timer</h3>
+                    </div>
+                    <div id="timer-form">
+                        <label for="nb-minutes-timer">Number of minutes</label>
+                        <input type="number" id="nb-minutes-timer" name="nb-minutes-timer">
+                        <div id="timer-progress-bar"></div>
+                        <input type="submit" value="Set Timer" id="set-timer-btn">
+                        <input type="button" value="Stop Timer" id="stop-timer-btn">
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <h2 id="tasks-lists-management-container-h2">Actions</h2>
+            <div id="tasks-lists-management-container">
+                    
+                <div id="remove-lists-container">
+                    <button id="remove-lists-btn" class="zoom-icon"><i class="iconoir-trash"></i></button>
+                </div>
+                <div  id="add-new-list-container">
+                    <button id="add-new-list-btn" class="zoom-icon"><i class="iconoir-page-plus-in"></i></button>    
+                </div>
+
+            </div>
+
+            <div id="add-list-form">
+                <input type="text" id="input-list-name" name="input-list-name" placeholder="Enter list name" required autofocus>
+                <br>
+                <input type="submit" value="Add List" id="add-list-submit-btn">
+            </div>
+
+            <div id="add-task-form">
+                <label for="new-task">New task's name</label>
+                <input type="text" id="task-name" name="task-name" required>
+                <label for="task-list">In which list do you want to add this task?</label>
+                <select name="task-list" id="task-list" required>
+                    <script>
+                        // Retrieve all the current lists from localStorage
+                        for (let i = 0; i < localStorage.length; i++){
+                            // Condition to remove items that aren't list classes (ex. current ZIndex etc.)
+                            if(localStorage.getItem(localStorage.key(i)).length > 10){
+                                document.getElementById("task-list").innerHTML +=
+                                `<option value="${localStorage.key(i)}">${localStorage.key(i)}</option>`
+                            }
+                        }
+                    </script>
+                </select>
+                <input type="submit" value="Add Task" id="add-task-submit-btn">
+            </div>
+            
+            <div id="all-lists-container-h2"><h2>All lists</h2></div>
+            <div id="all-lists-container">
+                <div id="color-palette-container">
+                    <div class="color-palette-class" id="color-1"></div>
+                    <div class="color-palette-class" id="color-2"></div>
+                    <div class="color-palette-class" id="color-3"></div>
+                    <div class="color-palette-class" id="color-4"></div>
+                </div>
+                <div id="edit-list-btn-container">
+                    <button id="remove-list-btn" class="edit-list-btn-class zoom-icon"><i class="iconoir-trash"></i></button>
+                    <button id="edit-list-name-btn" class="edit-list-btn-class zoom-icon"><i class="iconoir-erase"></i></button>
+                    <button id="add-new-task-list-btn" class="edit-list-btn-class zoom-icon"><i class="iconoir-playlist-plus"></i></button>
+                </div>
+                <div id="new-list-name-container">
+                    <input type="text" id="new-list-name" name="new-list-name" placeholder="Enter new list name">
+                    <input type="submit" id="save-new-list-name-btn" value="Save new list name">
+                </div>
+                <div id="new-task-container">
+                    <input type="text" id="new-task-name" name="new-task-name" placeholder="Enter new task name">
+                    <button id="add-new-task-btn"><i class="zoom-icon iconoir-plus-circle"></i></button>
+                </div>
+                <div id="list-container">
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
+
+
+
+<!-- Load JS files in this order -->
+<script src="./globalVariables.js"></script>
+<script src="./openingPage/closePageBtn.js"></script>
+
+<script src="./APIs/ImagesApi.js"></script>
+
+<script src="./listTasksManagement/listClassMethods.js"></script>
+<script src="./listTasksManagement/taskClassMethods.js"></script>
+
+<script src="./events/btnDarkLightMode.js"></script>
+<script src="./events/btnStartStopTimer.js"></script>
+
+<script src="./UI/displayNotes.js"></script>
+<script src="./UI/displayTaskStatus.js"></script>
+<script src="./UI/displayDoneRemainingTasks.js"></script>
+<script src="./UI/displayXYCoord.js"></script>
+<script src="./UI/displayEditListBtn.js"></script>
+<script src="./UI/displayListsColor.js"></script>
+<script src="./UI/displayZindex.js"></script>
+
+
+<!-- Goal LocalStorage -->
+<!-- 
+    ListName = {
+        name: '',
+        xCoord: 'px',
+        yCoord: 'px',
+        color: '',
+        tasks: [
+            {
+                taskName: '',
+                isDone: false,
+            },
+            {
+                taskName: '',
+                isDone: false,
+            }
+        ]
+    }
+
+    Quote = ''
+ -->
