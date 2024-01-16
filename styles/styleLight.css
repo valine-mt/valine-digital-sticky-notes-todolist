@@ -1,0 +1,194 @@
+body{
+    background: repeating-radial-gradient(circle,#e0d8ca, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #f4efe8;
+    opacity: 1;
+    color: #3b211f;
+    border: #69140E dotted 1px;
+}
+
+
+#main-container{
+}
+
+h1{
+}
+
+h2{
+}
+
+h3{
+}
+
+p{
+}
+
+button,input[type=submit], input[type=button]{
+    color: #69140E;
+}
+
+
+/* Icons */
+#remove-lists-btn, #add-new-list-btn, #add-new-task-btn, #dark-light-mode-btn, #close-page-btn, .delete-task-btn{
+    color: #69140E;
+}
+
+hr{
+    border-top: 1px dotted #999;
+}
+
+/* Header */
+#header-container{
+}
+
+
+#header-btn-container{
+    border-right: dotted #69140E 1px;
+}
+
+#dark-light-mode-btn{
+    
+}
+
+/* Dashboard */
+#dashboard-container{
+    border: dotted #69140E 1.5px;
+    
+    
+}
+
+#done-tasks-container, #remaining-tasks-container, #timer-container{
+}
+
+#done-tasks-container{
+}
+
+#dashboard-container-h2{
+}
+
+#remaining-tasks-container{
+}
+
+.counter-tasks{
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px 1px rgba(132, 52, 36, .4);
+    background-color: #cabbb1;
+}
+
+.counter-tasks > p{
+}
+
+#timer-container{
+}
+
+#timer-form{
+    background-color: #cabbb1;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px 1px rgba(132, 52, 36, .4);
+}
+
+#timer-progress-bar{
+}
+
+#set-timer-btn{
+}
+
+#stop-timer-btn{
+}
+
+/* Tasks & Lists Management */
+#tasks-lists-management-container{
+    border-left: dotted #69140E 1px;
+}
+
+#remove-lists-container, #add-new-list-container, #add-new-task-container{
+}
+
+#remove-lists-btn, #add-new-list-btn, #add-new-task-btn{
+}
+
+#remove-lists-container{
+
+}
+
+#remove-lists-btn{
+    
+}
+
+#add-new-list-container{
+
+}
+
+#add-new-list-btn{
+
+}
+
+#add-list-form{
+    border: 5px solid white;
+    background-color: #cabbb1;
+}
+
+#add-list-submit-btn{
+
+}
+
+#add-new-task-container{
+
+}
+
+#add-new-task-btn{
+}
+
+
+#add-task-submit-btn{
+
+}
+
+
+/* All lists container */
+
+#all-lists-container{
+}
+
+/* Color palette */
+#color-palette-container{
+    
+}
+
+.color-palette-class, #color-1, #color-2, #color-3, #color-4{
+    border: 1px solid black;
+}
+
+#color-1{
+    background-color: #cabbb1;
+}
+
+#color-2{
+    background-color: #997b79;
+}
+
+#color-3{
+    background-color: #be8f84;
+}
+
+#color-4{
+    background-color: #eeddcf;
+}
+
+#list-container{
+    
+}
+
+.individual-note-class{
+    background-color: #d37b2b;
+    border: 5px solid white;
+    box-shadow: 1px 1px 3px 1px rgba(132, 52, 36, .4);
+}
+
+.task-checkbox{
+
+}
+
+.delete-task-btn{
+    
+}

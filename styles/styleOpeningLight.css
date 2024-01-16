@@ -1,0 +1,50 @@
+body{
+    background: repeating-radial-gradient(circle,#e0d8ca, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #f4efe8;
+    opacity: 1;
+    /* color: #3b211f;
+    border: #69140E dotted 1px; */
+}
+
+button{
+}
+
+#opening-container{
+
+}
+
+
+#opening-part-1{
+    
+    background: repeating-radial-gradient(circle,#eeddcf, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #BE8F84;
+    opacity: 1;
+    border-top: white dotted 2px;
+    border-bottom: white dotted 2px;
+}
+.opening-slide-animation-left{
+    border: white dotted 1px;
+}
+
+
+#start-container{
+    color:#3b211f;
+}
+.start-container-animation-fade{
+}
+
+
+#opening-part-2{
+    background: repeating-radial-gradient(circle,#997b79, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #cabbb1;
+    border-left: white dotted 2px;
+    border-top: white dotted 2px;
+    border-bottom: white dotted 2px;
+}
+
+.opening-slide-animation-right{
+    border: white dotted 1px;
+}

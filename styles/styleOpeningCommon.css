@@ -1,0 +1,106 @@
+body{
+}
+
+button{
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+#opening-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+    "openingPart1 startContainer openingPart2"
+    "openingPart1 startContainer openingPart2"
+    "openingPart1 startContainer openingPart2"
+    "openingPart1 startContainer openingPart2"
+    "openingPart1 startContainer openingPart2";
+
+}
+
+
+#opening-part-1{
+    grid-area: "openingPart1";
+    grid-row: 2/ span 3;
+    height: 100%;
+    opacity: 1;
+    grid-column: 1 / span 2;
+    z-index: 1;
+}
+.opening-slide-animation-left{
+    border-radius: 20px;
+    border: white dotted 1px;
+    animation-name: slide-left;
+    animation-duration: 3.5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-left{
+    100%{
+        transform: translateX(-100%);
+    }   
+}
+
+
+#start-container{
+    grid-area: "startContainer";
+    grid-row: 3/span 1;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    grid-column:  1/ span 4;
+    z-index: 2;
+    font-family: Roboto, sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.7em;
+    text-transform: uppercase;
+}
+.start-container-animation-fade{
+    animation-name: fade-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+
+    33%{
+        opacity: 0.7;
+    }
+
+    66%{
+        opacity: 0.3;
+    }
+
+    100%{
+        opacity: 0
+    }
+}
+
+
+#opening-part-2{
+    grid-area: "openingPart2";
+    grid-row: 2/span 3;
+    height: 100%;
+    opacity: 0.9;
+    grid-column: 2 / span 4;
+    z-index: 1;
+}
+.opening-slide-animation-right{
+    border-radius: 20px;
+    animation-name: slide-right;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-right{
+    100%{
+        transform: translateX(100%);
+    }   
+}

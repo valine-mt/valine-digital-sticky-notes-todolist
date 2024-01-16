@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(45deg, #020c3b 0%, #020c3b 5%,transparent 5%, transparent 10%, #020c3b 10%, #020c3b 15%,transparent 15%,transparent 20%, #020c3b 20%, #020c3b 25%,transparent 25%,transparent 30%, #020c3b 30%, #020c3b 35%,transparent 35%,transparent 40%, #020c3b 40%, #020c3b 45%,transparent 45%,transparent 50%, #020c3b 50%, #020c3b 55%,transparent 55%,transparent 60%, #020c3b 60%, #020c3b 65%,transparent 65%,transparent 70%, #020c3b 70%, #020c3b 75%,transparent 70%,transparent 80%, #020c3b 80%, #020c3b 85%,transparent 85%,transparent 90%, #020c3b 90%, #020c3b 95%,transparent 95%), linear-gradient(135deg, #020c3b 0%, #020c3b 5%,transparent 5%, transparent 10%, #020c3b 10%, #020c3b 15%,transparent 15%,transparent 20%, #020c3b 20%, #020c3b 25%,transparent 25%,transparent 30%, #020c3b 30%, #020c3b 35%,transparent 35%,transparent 40%, #020c3b 40%, #020c3b 45%,transparent 45%,transparent 50%, #020c3b 50%, #020c3b 55%,transparent 55%,transparent 60%, #020c3b 60%, #020c3b 65%,transparent 65%,transparent 70%, #020c3b 70%, #020c3b 75%,transparent 70%,transparent 80%, #020c3b 80%, #020c3b 85%,transparent 85%,transparent 90%, #020c3b 90%, #020c3b 95%,transparent 95%);
+    background-size: 1em 1em;
+    background-color: #04124e;
+    opacity: 1;
+}
+
+button{
+}
+
+#opening-container{
+
+}
+
+
+#opening-part-1{
+    background: repeating-radial-gradient(circle,#840303, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #620101;
+    border-top: white dotted 2px;
+    border-bottom: white dotted 2px;
+}
+.opening-slide-animation-left{
+    border: white dotted 1px;
+}
+
+
+#start-container{
+    color:white;
+}
+.start-container-animation-fade{
+}
+
+
+#opening-part-2{
+    background: repeating-radial-gradient(circle,#ffbd66, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #c97e00;
+    border-left: white dotted 2px;
+    border-top: white dotted 2px;
+    border-bottom: white dotted 2px;
+}
+
+.opening-slide-animation-right{
+    border: white dotted 1px;
+}

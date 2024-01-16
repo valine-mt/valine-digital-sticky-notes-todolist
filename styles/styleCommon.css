@@ -1,0 +1,397 @@
+body{
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 1fr 1fr 50px 50px;
+    grid-template-rows: 0.5fr 20px 30px 30px 20px 40px 50px 150px 30px 2000px;
+    row-gap: 25px;
+    column-gap: 5px;
+
+}
+
+h1{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    
+}
+
+h2{
+    text-align: left;
+    margin: 0%;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-family: Lora, sans-serif;
+}
+
+label, button,input[type=submit], input[type=button]{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="submit"]{
+    background-color: transparent;
+    margin-top: 10%;
+    border: none;
+}
+
+
+/* Icons */
+#remove-lists-btn, #add-new-list-btn, #dark-light-mode-btn, #close-page-btn, .delete-task-btn, #remove-list-btn, #edit-list-name-btn, #add-new-task-list-btn, #add-new-task-btn{
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+hr{
+    border-bottom: none;
+    margin: 1% 5% 1% 5%;
+}
+
+/* Header */
+#header-container{
+    grid-column: 3/span 3;
+    grid-row: 1/span 1;
+    /* border:green solid 3px */
+}
+
+
+#header-btn-container{
+    margin-left: 20%;
+    grid-column: 6/span 1;
+    grid-row: 4/span 5;
+    /* border:purple solid 3px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#dark-light-mode-btn{
+    
+}
+
+#close-page-btn{
+
+}
+
+/* Dashboard */
+#dashboard-container{
+    grid-column: 3/span 3;
+    grid-row: 4/span 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    /* border:yellow solid 3px */
+}
+
+#dashboard-container-h2{
+    grid-column: 3/span 3;
+    grid-row: 3/span 1;
+}
+
+#done-tasks-container, #remaining-tasks-container, #timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+#done-tasks-container{
+    
+}
+
+#remaining-tasks-container{
+}
+
+.counter-tasks{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.counter-tasks > p{
+    font-size: 45px;
+    margin-left: 40%;
+    margin-right: 33%;
+}
+
+#timer-container{
+}
+
+#timer-form{
+    width: 300px;
+    padding: 10% 2% 10% 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#timer-progress-bar{
+    visibility: hidden;
+}
+
+#set-timer-btn{
+    visibility: visible;
+}
+
+#stop-timer-btn{
+    visibility: hidden;
+}
+
+#nb-minutes-timer, #set-timer-btn, #timer-progress-bar{
+    margin-top: 5%;
+}
+
+/* Tasks & Lists Management */
+#tasks-lists-management-container{
+    /* border: pink solid 3px; */
+    grid-column: 2/span 1;
+    grid-row: 4/span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#tasks-lists-management-container-h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: orange solid 3px; */
+    grid-column: 1/span 1;
+    grid-row: 4/span 5;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}
+
+#remove-lists-container, #add-new-list-container, #add-new-task-container{
+}
+
+#remove-lists-btn, #add-new-list-btn{
+}
+
+#remove-lists-container{
+
+}
+
+#remove-lists-btn{
+    
+}
+
+#add-new-list-container{
+
+}
+
+#add-new-list-btn{
+
+}
+
+#add-list-form{
+    grid-column: 3/span 1;
+    grid-row: 5/span 3;
+    visibility: hidden;
+    width: 310px;
+    height: 400px;
+    margin: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    grid-column: 3/span 3;
+    grid-row: 10/span 1;
+    z-index: 2147483647;
+}
+
+
+#add-list-form > input[type="submit"]{
+    margin-left: 33%;
+}
+
+#add-list-form > input[type="text"]{
+    margin-top: 10%;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+#add-list-submit-btn{
+
+}
+
+#add-new-task-container{
+
+}
+
+
+#add-task-form{
+    /* grid-area: addTaskForm; */
+    grid-column: 3/span 1;
+    grid-row: 8/span 1;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 15%;
+    max-width: 45%;
+    max-height: fit-content;
+}
+
+#add-task-submit-btn{
+}
+
+#task-name, #task-list, #add-task-submit-btn{
+    margin-bottom: 5%;
+}
+
+
+/* All lists container */
+
+#all-lists-container{
+    /* grid-area: allListsContainer; */
+    grid-column: 3/span 3;
+    grid-row: 10/span 1;
+    /* border:red solid 3px */
+}
+
+#all-lists-container-h2{
+    /* grid-area: allListsContainerH2; */
+    grid-column: 3/span 3;
+    grid-row: 10/span 1;
+}
+
+/* Color palette */
+#color-palette-container{
+}
+
+.color-palette-class, #color-1, #color-2, #color-3, #color-4{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+    visibility: visible;
+    position: absolute;
+    visibility: hidden;
+    z-index: 2147483646;
+}
+
+#color-1{
+}
+
+#color-2{
+    margin-left: 40px;
+}
+
+#color-3{
+    margin-left: 80px;
+}
+
+#color-4{
+    margin-left: 120px;
+}
+
+#new-list-name-container{
+    visibility: hidden;
+}
+
+#new-list-name, #save-new-list-name-btn{
+    position: absolute;
+    z-index: 2147483646;
+}
+
+#new-list-name-container > input[type="submit"]{
+    margin-top: 2%
+}
+
+#new-task-container{
+    visibility: hidden;
+}
+
+#new-task-name, #add-new-task-btn, #new-task-name, #add-new-task-btn{
+    position: absolute;
+    z-index: 2147483646;
+}
+
+#new-task-container > input[type="submit"]{
+    margin-top: 2%
+}
+
+#list-container{
+    
+}
+
+.individual-note-class{
+    width: 300px;
+    height: 400px;
+    margin: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: absolute; 
+    cursor: grab;
+}
+
+.individual-note-class > h3{
+    font-size: 25px;
+}
+
+.task-checkbox{
+    list-style: none;
+    margin-bottom: 5%;
+}
+
+.task-checkbox > label{
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    text-transform:none;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    margin: 3%;
+}
+
+.delete-task-btn{
+    
+}
+
+#edit-list-btn-container{
+    visibility: hidden;
+}   
+
+#remove-list-btn, #edit-list-name-btn, #add-new-task-list-btn{
+    position: absolute;
+    z-index: 2147483647;
+}

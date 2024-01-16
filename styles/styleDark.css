@@ -1,0 +1,194 @@
+body{
+    background: linear-gradient(45deg, #020c3b 0%, #020c3b 5%,transparent 5%, transparent 10%, #020c3b 10%, #020c3b 15%,transparent 15%,transparent 20%, #020c3b 20%, #020c3b 25%,transparent 25%,transparent 30%, #020c3b 30%, #020c3b 35%,transparent 35%,transparent 40%, #020c3b 40%, #020c3b 45%,transparent 45%,transparent 50%, #020c3b 50%, #020c3b 55%,transparent 55%,transparent 60%, #020c3b 60%, #020c3b 65%,transparent 65%,transparent 70%, #020c3b 70%, #020c3b 75%,transparent 70%,transparent 80%, #020c3b 80%, #020c3b 85%,transparent 85%,transparent 90%, #020c3b 90%, #020c3b 95%,transparent 95%), linear-gradient(135deg, #020c3b 0%, #020c3b 5%,transparent 5%, transparent 10%, #020c3b 10%, #020c3b 15%,transparent 15%,transparent 20%, #020c3b 20%, #020c3b 25%,transparent 25%,transparent 30%, #020c3b 30%, #020c3b 35%,transparent 35%,transparent 40%, #020c3b 40%, #020c3b 45%,transparent 45%,transparent 50%, #020c3b 50%, #020c3b 55%,transparent 55%,transparent 60%, #020c3b 60%, #020c3b 65%,transparent 65%,transparent 70%, #020c3b 70%, #020c3b 75%,transparent 70%,transparent 80%, #020c3b 80%, #020c3b 85%,transparent 85%,transparent 90%, #020c3b 90%, #020c3b 95%,transparent 95%);
+    background-size: 1em 1em;
+    background-color: #04124e;
+    color: white;
+    opacity: 1;
+    border: white dotted 1px;
+}
+
+#main-container{
+}
+
+h1{
+}
+
+h2{
+}
+
+h3{
+}
+
+p{
+}
+
+button,input[type=submit], input[type=button]{
+    color: orange;
+}
+
+
+/* Icons */
+#remove-lists-btn, #add-new-list-btn, #add-new-task-btn, #dark-light-mode-btn, #close-page-btn, .delete-task-btn{
+    color: orange;
+}
+
+hr{
+    border-top: 1px dotted #999;
+}
+
+/* Header */
+#header-container{
+}
+
+
+#header-btn-container{
+    border-right: dotted orange 1px;
+}
+
+#dark-light-mode-btn{
+    
+}
+
+/* Dashboard */
+#dashboard-container{
+    border: dotted orange 1.5px;
+    
+}
+
+#done-tasks-container, #remaining-tasks-container, #timer-container{
+}
+
+#done-tasks-container{
+}
+
+#dashboard-container-h2{
+}
+
+#remaining-tasks-container{
+}
+
+.counter-tasks{
+    border: 3px dotted orange;
+    box-shadow: 1px 1px 3px 1px rgba(132, 52, 36, .4);
+    background: linear-gradient(45deg, #020c3b 0%, #020c3b 5%,transparent 5%, transparent 10%, #020c3b 10%, #020c3b 15%,transparent 15%,transparent 20%, #020c3b 20%, #020c3b 25%,transparent 25%,transparent 30%, #020c3b 30%, #020c3b 35%,transparent 35%,transparent 40%, #020c3b 40%, #020c3b 45%,transparent 45%,transparent 50%, #020c3b 50%, #020c3b 55%,transparent 55%,transparent 60%, #020c3b 60%, #020c3b 65%,transparent 65%,transparent 70%, #020c3b 70%, #020c3b 75%,transparent 70%,transparent 80%, #020c3b 80%, #020c3b 85%,transparent 85%,transparent 90%, #020c3b 90%, #020c3b 95%,transparent 95%), linear-gradient(135deg, #020c3b 0%, #020c3b 5%,transparent 5%, transparent 10%, #020c3b 10%, #020c3b 15%,transparent 15%,transparent 20%, #020c3b 20%, #020c3b 25%,transparent 25%,transparent 30%, #020c3b 30%, #020c3b 35%,transparent 35%,transparent 40%, #020c3b 40%, #020c3b 45%,transparent 45%,transparent 50%, #020c3b 50%, #020c3b 55%,transparent 55%,transparent 60%, #020c3b 60%, #020c3b 65%,transparent 65%,transparent 70%, #020c3b 70%, #020c3b 75%,transparent 70%,transparent 80%, #020c3b 80%, #020c3b 85%,transparent 85%,transparent 90%, #020c3b 90%, #020c3b 95%,transparent 95%);
+    background-size: 1em 1em;
+    background-color: #02092c;
+}
+
+.counter-tasks > p{
+}
+
+#timer-container{
+}
+
+#timer-form{
+    border: 2px dotted orange;
+    box-shadow: 1px 1px 3px 1px rgba(132, 52, 36, .4);
+}
+
+#timer-progress-bar{
+}
+
+#set-timer-btn{
+}
+
+#stop-timer-btn{
+}
+
+/* Tasks & Lists Management */
+#tasks-lists-management-container{
+    border-left: dotted orange 1px;
+}
+
+#remove-lists-container, #add-new-list-container, #add-new-task-container{
+}
+
+#remove-lists-btn, #add-new-list-btn, #add-new-task-btn{
+}
+
+#remove-lists-container{
+
+}
+
+#remove-lists-btn{
+    
+}
+
+#add-new-list-container{
+
+}
+
+#add-new-list-btn{
+
+}
+
+#add-list-form{
+    border: white 1px dotted;
+    background-color: #c06007
+}
+
+#add-list-submit-btn{
+
+}
+
+#add-new-task-container{
+
+}
+
+#add-new-task-btn{
+}
+
+
+
+#add-task-submit-btn{
+
+}
+
+
+/* All lists container */
+
+#all-lists-container{
+}
+
+/* Color palette */
+#color-palette-container{
+    
+}
+
+.color-palette-class, #color-1, #color-2, #color-3, #color-4{
+    border: 1px solid black;
+}
+
+#color-1{
+    background-color: #c06007;
+}
+
+#color-2{
+    background-color: #631809;
+}
+
+#color-3{
+    background-color: #584c2d;
+}
+
+#color-4{
+    background-color: #1a0a09;
+}
+
+#list-container{
+    
+}
+
+.individual-note-class{
+    background-color: #d37b2b;
+    border: dotted orange 1px;;
+    box-shadow: 1px 1px 3px 1px rgba(132, 52, 36, .4);
+}
+
+.task-checkbox{
+
+}
+
+.delete-task-btn{
+    
+}

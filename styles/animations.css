@@ -1,0 +1,26 @@
+/* Zoom icons */
+.zoom-icon:hover{
+    animation-name: zoom-icon;
+    animation-duration: .3s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom-icon{
+    100%{
+        scale: 1.5;
+    }   
+}
+
+/* Zoom submit btn */
+input[type="submit"]:hover{
+    animation-name: zoom-submit;
+    animation-duration: .2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom-submit{
+    100%{
+        scale: 1.1;
+    }   
+}
